@@ -1,0 +1,28 @@
+
+  .vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+      0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+    padding: 5em 3em !important;
+  }
+  
+  .vertical-timeline-element-date {
+    color: white;
+  }
+ 
+  #description {
+    margin: 1.5em 0 2em 0;
+  }
+  
+ 
+  
+ 
+ 
+  @media only screen and (max-width: 600px) {
+    .vertical-timeline-element-date {
+      display: block !important;
+      float: none !important;
+      color: black;
+      margin-top: 1.5em;
+    }
+  }
+  
