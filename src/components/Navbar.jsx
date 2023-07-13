@@ -3,6 +3,8 @@ import {AiOutlineMenu,AiOutlineClose} from "react-icons/ai";
 
 function Navbar() {
     const [toggle,setToggle]=useState(false);
+
+    //test comment
   return (
     <div className='bg-primary p-4'>
         <div className='max-w-[1240px] py-[15px] items-center  flex justify-between  mx-auto'>
