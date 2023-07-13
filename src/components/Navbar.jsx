@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import {AiOutlineMenu,AiOutlineClose} from "react-icons/ai";
+import {Link} from 'react-router-dom';
+
 
 function Navbar() {
     const [toggle,setToggle]=useState(false);
@@ -14,9 +16,9 @@ function Navbar() {
       }
             <ul className='hidden md:flex flex text-white gap-10'>
                 <li>Home</li>
-                <li>Works</li>
-                <li>Experience</li>
-                <li>Connect</li>
+                <li><Link to="#works">Works</Link></li>
+                <li><Link to="#exp">Experience</Link></li>
+                <li><Link to="#connect">Connect</Link></li>
             </ul>
 
             <ul className={`duration-300 md:hidden w-full h-screen text-white fixed bg-black top-[80px]

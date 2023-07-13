@@ -4,7 +4,7 @@ import {AiOutlineSend} from 'react-icons/ai'
 
 function Connect() {
   return (
-    <div className="my-[20px] shadow-md rounded mx-auto max-w-[1240px]">
+    <div className="my-[20px] shadow-md rounded mx-auto max-w-[1240px]" id="connect">
         <h2 className='font-bold text-4xl md:text-[40px] text-center'>Connect with me</h2>
   <form className="px-8 pt-6 pb-8 mb-4 text-center">
     <div className='flex space-x-4 justify-center'>

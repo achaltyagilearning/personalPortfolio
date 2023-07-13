@@ -90,7 +90,7 @@ function Slider() {
     },[]);
 
   return (
-    <div className='max-w-[1140px] shadow-md  max-h-[1400px] rounded w-full m-auto py-16 px-4  relative group'>
+    <div id="works" className='max-w-[1140px] shadow-md  max-h-[1400px] rounded w-full m-auto py-16 px-4  relative group'>
                
         <h2 className='font-bold text-4xl md:text-[40px] text-center'>Connect with me</h2>
         
