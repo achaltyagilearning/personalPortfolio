@@ -1,9 +1,18 @@
 import React,{useState} from 'react'
 import {AiFillGithub} from 'react-icons/ai'
-
+import achalPhoto from '../assets/achalPhoto.jpg';
 function ProjectCard(props){
  
-  const [showFullDescription,setShowFullDescription] = useState(!false);
+  const [showFullDescription,setShowFullDescription] = useState(false);
+
+  const colorList =['bg-orange-700', 'bg-yellow-700' , 'bg-purple-700', 'bg-green-700', 'bg-pink-700',
+  'bg-sky-700','bg-cyan-700', 'bg-violet-700', 'bg-orange-700', 'bg-orange-700'];
+
+  function getColor(){
+       let x= Math.floor((Math.random() * 10));
+
+       return colorList[x];
+  };
 
   const showFullDescriptionHandle =(e)=>{
         console.log('inside handle');
@@ -13,11 +22,11 @@ function ProjectCard(props){
   const description = showFullDescription ? props.data.description :props.data.description.slice(0,200);
  
   return (
-    <div className='bg-green-700 max-w-[1400px] h-full bg-black md:flex'>
-      <div className="md:h-full md:w-1/3  h-48" 
-         style={{backgroundImage:`url(${props.data.imageUrl})`}} title="Woman holding a mug">
+    <div className={`max-w-[1400px] ${getColor()} h-full bg-black md:flex`}>
+      <div className="md:h-full md:w-1/3 h-48 text-white m-auto justify-center flex items-center" >
+          <h2 className='font-bold  text-[40px]'>{props.data.name}</h2>
       </div>
-      <div className="h-full w-full bg-white py-[20px] md:py-[0px] flex flex-col justify-center">
+      <div className="h-full w-full bg-zinc-100 py-[20px] md:py-[10px] flex flex-col justify-center">
         <div className='md:mx-[20px] mx-[10px]'>
         <div className="mb-8">
       <p className="text-[18px] font-bold text-gray-400 flex items-center">

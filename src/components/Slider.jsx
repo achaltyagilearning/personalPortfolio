@@ -90,13 +90,13 @@ function Slider() {
     },[]);
 
   return (
-    <div id="works" className='max-w-[1140px] shadow-md  max-h-[1400px] rounded w-full m-auto py-16 px-4  relative group'>
+    <div id="works" className='max-w-[1140px]   max-h-[1400px] rounded w-full m-auto py-4 px-4  relative group'>
                
-        <h2 className='font-bold text-4xl md:text-[40px] text-center'>Connect with me</h2>
+        <h2 className='font-bold text-4xl md:text-[40px] m-4 text-center'>Projects</h2>
         
         <div
         className={`w-full h-full rounded-2xl 
-        bg-center bg-cover duration-500`}>
+        bg-center  bg-cover duration-500`}>
            {
             projectList[currentIndex]
             }

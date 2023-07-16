@@ -4,7 +4,7 @@ import photo from '../assets/achalPhoto.jpg'
 
 function Banner() {
   return (
-    <div className='bg-secondary w-full py-[100px]'>
+    <div className='w-full py-[100px]'>
     <div className='max-w-[1240px] md:my-[100px] flex md:flex-row flex-col-reverse mx-auto text-center font-bold'>
         <div className='flex-auto md:text-left text-center'>
         <h2 className='text-white text-4xl md:text-[60px] md:p-[24px]'>I am a</h2>

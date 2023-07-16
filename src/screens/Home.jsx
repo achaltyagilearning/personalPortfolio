@@ -8,8 +8,7 @@ import Connect from '../components/Connect'
 
 function Home() {
   return (
-    <div>
-        
+    <div className='bg-gradient-to-b from-red-800 to-red-200'>
         <Navbar/>
         <Banner/>
         <Timeline/>

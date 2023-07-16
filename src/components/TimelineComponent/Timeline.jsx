@@ -16,8 +16,8 @@ function Timeline() {
   let schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div className="w-full bg-secondary" id="exp">
-    <div className='max-w-[1240px] mx-auto text-center bg-secondary text-black'>
+    <div className="w-full" id="exp">
+    <div className='max-w-[1240px] mx-auto text-center text-black'>
       <h1 className="text-[40px] text-white">Timeline</h1>
       <VerticalTimeline>
         {timelineElements.map((element) => {
